@@ -1,0 +1,183 @@
+/* Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@200&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Inter:wght@200&family=Lexend+Deca&display=swap');
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing:border-box;
+  color: white;
+}
+
+/* Navbar Styling */
+.navbar ul {
+  display: flex;
+  justify-content: space-around;
+  align-content: center;
+  background: #333;
+  padding: 20px;
+  font-family: "Big Shoulders Display";
+  font-size: large;
+  width: 100%;
+}
+ul li{
+  list-style-type: none;
+  font-size: 30px;
+}
+ul li a{
+  text-decoration: none;
+  color: black;
+}
+ul li a:hover{
+  background: white;
+}
+html body h1{
+  font-family: "Big Shoulders Display";
+  font-weight: 700;
+  margin: 10px 0;
+}
+html body p{
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 25px;
+  margin: 10px 0;
+  
+}
+
+img{
+  margin-bottom: 10px;
+  width: 50px;
+}
+
+.sedan{
+  background-color: hsl(31, 77%, 52%);
+  height: 100%;
+}
+.suv{
+  background-color: hsl(184, 100%, 22%);
+  /* height: 100%; */
+  
+}
+.luxury{
+  background-color: hsl(179, 100%, 13%);
+  height: 100%;
+}
+
+/* Flexbox Styling */
+.container{
+  display: flex;
+  flex-direction: column;
+  /* align-content: space-between; */
+  margin: 15px;
+  height: 100%;
+}
+
+
+.flex-container{
+  margin: auto;
+  margin-top: 40px;
+  height: 500px;
+  width: 50%;
+  display: flex;
+}
+
+/* Grid styling */
+.one{
+  background: #333;
+  grid-area: P;
+}
+.two{
+  background: rgb(177, 79, 79);
+  grid-area:Q ;
+}
+.three{
+  background: rgb(119, 0, 0);
+  grid-area: R;
+}
+.four{
+  background: rgb(10, 30, 56);
+  grid-area: S;
+}
+.five{
+  background: rgb(12, 148, 42);
+  grid-area:T ;
+}
+
+.grid-container{
+  text-align: center;
+  margin: auto;
+  margin-top: 40px;
+  display: grid;
+  width: 500px;
+  height: 400px;
+  grid-template-areas: 
+  'P P Q'
+  'R S S'
+  'R T T';
+  grid-gap: 5px;
+}
+/* Button Styling */
+
+.button{
+  padding: 8px;
+  border-radius: 20px;
+  width: 50%;
+  /* border: 2px solid white; */
+  font-family: "Lexend Deca";
+  font-weight: 400;
+  margin-top: 50px;
+  
+}
+.button:hover{
+  cursor: pointer;
+  border: 2px solid white;
+}
+.sedan-button{
+  background-color: hsl(31, 77%, 52%);
+}
+.suv-button{
+  background-color: hsl(184, 100%, 22%);
+}
+.luxury-button{
+  background-color: hsl(179, 100%, 13%);
+}
+
+
+@media(max-width:600px){
+  .flex-container{
+    display: block;
+    /* margin-top: 0; */
+    margin-top: -10px;
+
+  }
+
+  .grid-container{
+    display: block;
+     width: 50%;
+    height:50%; 
+  }
+
+  .one {
+    width: 400px;
+    height: 200px;
+  }
+  .two{
+    width: 200px;
+    height: 200px;
+  }
+  .three{
+    width: 300px;
+    height: 200px;
+  }
+  .four{
+    width: 300px;
+    height: 100px;
+  }
+  .five{
+    width: 300px;
+    height: 100px;
+  }
+
+}
